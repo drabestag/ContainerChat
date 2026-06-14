@@ -1,0 +1,36 @@
+# ContainerChat Configuration
+
+# The triggers players can type in chat to show their targeted container
+# Default triggers: [container] and [c]
+triggers:
+  - "[container]"
+  - "[c]"
+
+# How far (in blocks) the player can be from a container to display it
+# Default: 6 blocks (roughly arm's reach + a bit)
+max-distance: 6
+
+# Show empty slots count in the container summary?
+show-empty-slots: true
+
+# Format for the container header in chat
+# Placeholders: {player}, {container_type}, {world}
+header-format: "&8[&6{player}&8] &eLooking at &b{container_type}"
+
+# Format for each item line
+# Placeholders: {slot}, {amount}, {item}, {display_name}
+item-format: "  &7• &f{amount}x &e{display_name}"
+
+# Format shown when container is empty
+empty-format: "  &7(Empty container)"
+
+# Message shown when player is not targeting a container
+no-target-message: "&cYou are not looking at a container!"
+
+# Message shown when player is too far from the container
+too-far-message: "&cYou are too far from that container! (Max: {max} blocks)"
+
+# Should the container display be visible to everyone in chat, or only the sender?
+# true  = everyone sees it
+# false = only the sender sees it
+broadcast: true

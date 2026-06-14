@@ -1,0 +1,20 @@
+name: ContainerChat
+version: '${project.version}'
+main: dev.containerchat.ContainerChat
+api-version: '1.19'
+description: Show container contents in chat by typing [container] or [c] — Spigot/Bukkit edition
+authors: [ ]
+
+commands:
+  containerchat:
+    description: ContainerChat plugin command
+    usage: /containerchat reload
+    aliases: [ cc ]
+
+permissions:
+  containerchat.use:
+    description: Allows players to use [container] in chat
+    default: true
+  containerchat.reload:
+    description: Allows reloading the plugin config
+    default: op
